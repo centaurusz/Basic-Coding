@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<htm>
+    <head>
+        <style>
+            h1 {margin: 0;
+                padding: 0;}
+            p  {margin: 0%;
+                padding: 0;}
+            h2 {margin: 0;
+                padding: 0;
+                font-weight: 100;}
+            span {text-decoration-line: underline;}
+            table {font-family: 'times new romans';
+                    border-collapse: collapse;
+                    width: 100%;}
+            
+            td, th {border: 1px solid #000000;
+                    text-align: center;
+                    padding: 8px;}
+
+            tr:nth-child {background-color: white;}
+            </style>
+    </head>
+
+    <body>
+        <h1><span>1. TABLE</span></h1>
+            <h1>
+                対戦結果
+                <p span style="font-weight: 100;">第73回JABA九州大会</p></span>
+            </h1>
+            <h2>2021年5月9日(日) 9:00
+               <br> 試合会場：オーヴィジョンスタジアム下関
+            </h2>
+        
+        <table>
+            <tr>
+                <th>チーム名</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>計</th>
+            </tr>
+            <tr>
+                <td>パナソニック</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>3</td>
+                <td>0</td>
+                <td>3</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Honda熊本</td>
+                <td>0</td>
+                <td>1</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>1</td>
+            </tr>
+        </table>
+        <br>
+        <table style="width:100%">
+            <tr>
+                <th rowspan='3'>バッテリー</th>
+                <th colspan="5">Honda熊本</th>
+                <th colspan="5">パナソニック</th>
+            </tr>
+            <tr>
+                <td colspan="5">
+                    投手：島袋、福田、横川、内田、高山、中津
+                    <br>捕手：竹葉
+                </td>
+                <td colspan="5">
+                    投手：榎本
+                    <br>捕手：川上
+                </td>
+            </tr>
+        </table>
+        <br>
+            <h1><span>2. FORM</span></h1>
+            <h2>お問い合わせ</h2>
+            <br>
+        <form>
+            <label for="fname">お名前［必須］:</label>
+            <input type="text" id="fname" name="fname">
+            <p>
+                <label for="fname">メールアドレス［必須］</label>
+                <input type="text" id="fname" name="fname">
+            </p>
+            <br>
+                <label for="fname">電話番号［任意］</label>
+                <input type="text" id="fname" name="fname">
+            </br>
+            <br>
+                <label for="fname">ご用件「必須」</label>
+                    <select for="fname" name="fname">
+                        <option value="" disable selected hidden>選択してください</option>
+                        <option value="1">書籍についてのご質問(個人のお客様)</option>
+                        <option value="2">書籍についてのご質問(取次・書店様)</option>
+                        <option value="3">書籍についてのご質問(メディア関係者様)</option>
+                        <option value="4">アルバイト・パートに関するお問い合わせ</option>
+                        <option value="5">仕事のご依頼・お問い合わせ</option>
+                        <option value="6">外部スタッフのご希望(フリーの方、制作会社様)</option>
+                        <option value="7">その他のお問合せ</option>
+                    </select>
+            </br>
+            <br>
+                <label for="fname">お問い合わせ内容 [必須]</label>
+                <br>
+                <form action="/action_page.php">
+                    <textarea name="message" style="width:300px; height:150px;"></textarea>
+                    <br>
+                    <input type="submit" value="確認">
+                </form>
+            </br>
+        </form>
+    </body>
+</htm>
