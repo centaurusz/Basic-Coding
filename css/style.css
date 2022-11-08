@@ -1,165 +1,111 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Josefin+Sans&family=Reenie+Beanie&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: Josefin sans;
+    color: #fff;
 }
-
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(../img/antique.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.container {
+    text-align: center;
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+}
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    list-style: none;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+.content h1{
+    font-size: 65px;
+    margin-top: 80px;
+}
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+button {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span {
+    background: #009688;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span {
+    width: 100%;
+}
+button:hover span {
+    border: none;
+}
 body {
     font-family: 'josefin sans', sans serif;
-    color: #3d031f;
+    color: #ffffff;
 }
 .font-crimson-text {
-    font-family: 'crimson text'; serif;
+    font-family: 'crimson text';
 }
 .font.reenie-beanie {
     font-family: cursive;
 }
-.font-grey {
-    color:#3d031f
-}
-.container {
-    width: 100%;
-    max-width: 900px;
-    margin: 0 auto;
-    /* margin-top: 0;
-    margin-right: auto;
-    margin-bottom: 0;
-    margin-left: auto; */
-    padding-bottom: 50px;
-
-}
-#top {
-    background: #750035;
-    color: #fff;
-    padding: 50px 15px 10px;
-    /* padding-top: 50px;
-    padding-right: 15px;
-    padding-bottom: 10px;
-    padding-left: 15px; */
-    margin-bottom: 50px;
-}
-
-#top span {
-    background: #f0ec78;
-    font-family: 'Times New Roman', Times, serif;
-    color: #343a42;
-    font-size: 14px;
-}
-p {
-    font-size: 16px;
-}
-
-#project ul il{
-    list-style: none;
-    width: 100%;
-    margin: 10px o;
-    height: 100px;
-    border-radius: 10px
-
-}
-
-#project ul il a{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 10;
-    font-size: 32px;
-    text-decoration: none;
-}
-
-.bg-code {
-    position: relative;
-    overflow: hidden;
-    background-color: #3d031f;
-}
-.bg-code::after {
-    content: '';
-    background: url("https://www.pexels.com/photo/programming-language-on-a-screen-6424586/") no-repeat center;
-    background-size: cover;
-    filter: blur(5px);
-    -webkit-filter: blur(5px)
-    height: 100%;
-    width: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    transition: all .5s ease-in;
-}
-.bg-zoo::after {
-    content: '';
-    background: url("https://www.pexels.com/photo/photo-of-fox-sitting-on-ground-2295744/") no-repeat center;
-    background-size: cover;
-    filter: bllur(5px)
-    -webkit-filter: blur(5px)
-    height: 100%;
-    width: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    transition: all .5s ease-in;
-}
-.bg-table::after {
-    content:'';
-    background: url("https://www.pexels.com/photo/business-charts-commerce-computer-265087/") no-repeat center;
-    background-size: cover;
-    filter: bllur(5px)
-    -webkit-filter: blur(5px)
-    height: 100%;
-    width: 100%;
-    display: block;
-    position: absolute;
-    top: 0;
-    transition: all .5s ease-in;
-}
-.bg-code:hover::after, .bg-zoo:hover::after, .bg-table::after {
-    transform: scale(1.5);
-}
-/* .font-blue {
-    color: blue;
-}
-#banner {
-    height: 500px;
-    width: 100%;
-    background-image: url(../xyz-zoo/img/lion);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.column-left, column-right {
-    height: 350px;
-    font-size: 48px;
-    width: 49%;
-}
-.column-left {
-    background: #f590f1
-}
-.column-left:hover {
-    background: #000
-}
-#project {
-    display: flex;
-    flex-wrap: wrap;
-    //space-between untuk jarak di tengah
-    justify-content: center;
-    align-items: center;
-} */
-
-
-/*
-=================
-example page CSS
-=================
-*/
-#example h2 {
-    margin: 15px 0;
-}
-.logo a {
-    text-decoration: none;
-    position: relative;
-}
-.logo a:hover span color:
