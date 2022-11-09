@@ -109,3 +109,24 @@ body {
 .font.reenie-beanie {
     font-family: cursive;
 }
+
+/*===== Zoo content =====*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/);
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
